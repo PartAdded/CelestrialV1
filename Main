@@ -1,0 +1,137 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Login = Instance.new("ScreenGui")
+local Mainframe = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+local TitleFrame = Instance.new("ImageLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local LoadBar = Instance.new("ImageLabel")
+local TextBox = Instance.new("TextBox")
+local Open = Instance.new("ImageLabel")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+Login.Name = "Login"
+Login.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Login.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Mainframe.Name = "Mainframe"
+Mainframe.Parent = Login
+Mainframe.AnchorPoint = Vector2.new(0.5, 0.5)
+Mainframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Mainframe.BackgroundTransparency = 1.000
+Mainframe.Position = UDim2.new(0.49969238, 0, 0.498786569, 0)
+Mainframe.Size = UDim2.new(0.215101883, 0, 0.249900356, 0)
+Mainframe.Image = "rbxassetid://3570695787"
+Mainframe.ImageColor3 = Color3.fromRGB(107, 107, 107)
+Mainframe.ScaleType = Enum.ScaleType.Slice
+Mainframe.SliceCenter = Rect.new(100, 100, 100, 100)
+Mainframe.SliceScale = 0.200
+
+TextLabel.Parent = Mainframe
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.142427981, 0, 0.292475581, 0)
+TextLabel.Size = UDim2.new(0.709792972, 0, 0.199414805, 0)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.Text = "Key:"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TitleFrame.Name = "TitleFrame"
+TitleFrame.Parent = Login
+TitleFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+TitleFrame.BackgroundColor3 = Color3.fromRGB(99, 99, 99)
+TitleFrame.BackgroundTransparency = 1.000
+TitleFrame.Position = UDim2.new(0.49969238, 0, 0.399118721, 0)
+TitleFrame.Size = UDim2.new(0.215101853, 0, 0.050564833, 0)
+TitleFrame.Image = "rbxassetid://3570695787"
+TitleFrame.ImageColor3 = Color3.fromRGB(74, 74, 74)
+TitleFrame.ScaleType = Enum.ScaleType.Slice
+TitleFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+TitleFrame.SliceScale = 0.200
+
+TextLabel_2.Parent = TitleFrame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0, 0, 0.145594537, 0)
+TextLabel_2.Size = UDim2.new(1, 0, 0.6845451, 0)
+TextLabel_2.Font = Enum.Font.FredokaOne
+TextLabel_2.Text = "Celestrial Login"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeColor3 = Color3.fromRGB(101, 137, 255)
+TextLabel_2.TextWrapped = true
+
+LoadBar.Name = "LoadBar"
+LoadBar.Parent = Login
+LoadBar.AnchorPoint = Vector2.new(0.5, 0.5)
+LoadBar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadBar.BackgroundTransparency = 1.000
+LoadBar.Position = UDim2.new(0.499116868, 0, 0.532690227, 0)
+LoadBar.Size = UDim2.new(0.152677789, 0, 0.0486046262, 0)
+LoadBar.Image = "rbxassetid://3570695787"
+LoadBar.ImageColor3 = Color3.fromRGB(89, 89, 89)
+LoadBar.ScaleType = Enum.ScaleType.Slice
+LoadBar.SliceCenter = Rect.new(100, 100, 100, 100)
+LoadBar.SliceScale = 0.200
+
+TextBox.Parent = LoadBar
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Size = UDim2.new(1, 0, 1, 0)
+TextBox.Font = Enum.Font.FredokaOne
+TextBox.PlaceholderText = "Key here"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 14.000
+TextBox.TextWrapped = true
+
+Open.Name = "Open"
+Open.Parent = Login
+Open.AnchorPoint = Vector2.new(0.5, 0.5)
+Open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Open.BackgroundTransparency = 1.000
+Open.Position = UDim2.new(0.499116868, 0, 0.59134835, 0)
+Open.Size = UDim2.new(0.152677789, 0, 0.0392638035, 0)
+Open.Image = "rbxassetid://3570695787"
+Open.ImageColor3 = Color3.fromRGB(0, 204, 64)
+Open.ScaleType = Enum.ScaleType.Slice
+Open.SliceCenter = Rect.new(100, 100, 100, 100)
+Open.SliceScale = 0.200
+
+TextButton.Parent = Open
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.Position = UDim2.new(0.0655983314, 0, 0, 0)
+TextButton.Size = UDim2.new(0.863757312, 0, 1, 0)
+TextButton.Font = Enum.Font.FredokaOne
+TextButton.Text = "Launch Celestrial"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
+-- Scripts:
+
+local function YCVQY_fake_script() -- Login.LocalScript 
+	local script = Instance.new('LocalScript', Login)
+
+	script.Parent.LoadBar.TextBox.Changed:Connect(function()
+		_G.Key = script.Parent.LoadBar.TextBox.Text
+	end)
+	
+	script.Parent.Open.TextButton.MouseButton1Click:Connect(function()
+		script.Parent:Destroy()
+		loadstring(game:HttpGet("https://celestrial.000webhostapp.com/main"))()
+	end)
+end
+coroutine.wrap(YCVQY_fake_script)()
